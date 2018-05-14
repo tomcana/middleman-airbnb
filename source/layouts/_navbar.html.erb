@@ -6,20 +6,21 @@
 
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
-    <%= link_to "about", "about.html", class: "navbar-wagon-item navbar-wagon-link" %>
-    <%= link_to "team", "team.html", class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "about", "/about.html", class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "team", "/team.html", class: "navbar-wagon-item navbar-wagon-link" %>
 
-    <!-- <a href="/team.html" class="navbar-wagon-item navbar-wagon-link">team</a> -->
-    <a href="" class="navbar-wagon-item navbar-wagon-link">Messages</a>
 
     <!-- Profile picture with dropdown list -->
     <div class="navbar-wagon-item">
       <div class="dropdown">
         <img src="https://kitt.lewagon.com/placeholder/users/ssaunier" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-          <li><a href="/about.html">about</a></li>
-          <li><a href="/team.html">team</a></li>
-          <li><a href="#">Log Out</a></li>
+          <li>
+            <%= link_to "about", "/about.html", class: "navbar-wagon-item navbar-wagon-link" %>
+          </li>
+          <li>
+            <%= link_to "team", "/team.html", class: "navbar-wagon-item navbar-wagon-link" %>/li>
+          </li>
         </ul>
       </div>
     </div>
